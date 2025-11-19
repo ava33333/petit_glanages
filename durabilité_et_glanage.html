@@ -1,49 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La Durabilité & Le Glanage</title>
+
+    <!-- IMPORT OSWALD FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Oswald', sans-serif;
+            background: #faf8f5;
+            color: #52b69a;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            line-height: 1.6;
+        }
+        h1, h2 {
+            color: #52b69a;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .section {
+            background: #ffffff;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+        }
+
+        /* MENU STYLES */
+        .menu {
+            position: relative;
+            margin-bottom: 1.5rem;
+        }
+        .menu-toggle {
+            background: #52b69a;
+            color: white;
+            padding: 10px 15px;
+            width: fit-content;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+        .menu-list {
+            list-style: none;
+            padding: 0;
+            margin-top: 10px;
+            display: none;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .menu-list li {
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .menu-list li:last-child {
+            border-bottom: none;
+        }
+        .menu-list a {
+            display: block;
+            padding: 12px 16px;
+            text-decoration: none;
+            color: #333;
+        }
+        .menu-list a:hover {
+            background: #f2f2f2;
+        }
+    </style>
+</head>
+
 <body>
 
+<!-- MENU -->
 <nav class="menu">
-  <div class="menu-toggle" onclick="toggleMenu()">☰ Menu</div>
-  <ul id="menu-list" class="menu-list">
-    <li><a href="index.html">Accueil</a></li>
-    <li><a href="glanages.html">Mes Glanages</a></li>
-    <li><a href="reflexion.html">Réflexion</a></li>
-    <li><a href="apropos.html">À propos</a></li>
-  </ul>
+    <div class="menu-toggle" onclick="toggleMenu()">☰ Menu</div>
+    <ul id="menu-list" class="menu-list">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="glanages.html">Mes Glanages</a></li>
+        <li><a href="reflexion.html">Réflexion</a></li>
+        <li><a href="apropos.html">À propos</a></li>
+    </ul>
 </nav>
 
+<!-- HEADER -->
 <header>
-  <h1>La Durabilité & Le Glanage</h1>
-  <p>Un projet inspiré du film <i>Les Glaneurs et la Glaneuse</i></p>
+    <h1>La Durabilité & Le Glanage</h1>
+    <p>Un projet inspiré du film <i>Les Glaneurs et la Glaneuse</i> d’Agnès Varda</p>
 </header>
 
-<!-- Your text section -->
+<!-- INTRODUCTION SECTION -->
 <div class="section">
-  <h2>Mon texte</h2>
-  <p>Durabilité: « La durabilité est une notion à double sens, 
-    recouvrant celle de durée et celle de soutenabilité sur le plan économique, 
-    social et environnemental. » (défini dans la glossaire du Géoconfluences)
-
-    Gleanage: « Pratique qui consiste, après la récolte, à récupérer les aliments 
-    laissés dans les champs et les vergers appartenant à autrui. » (défini dans La 
-    Grand Dictionnare Terminologie de Québec)
-
-    Contrairement à de nombreuses idées populaires sur la durabilité, dans le film, Varda ne condamne 
-    pas directement le consumérisme, mais plutôt le gaspillage incessant et le besoin constant de 
-    nouveauté, qui ont créé une nouvelle forme de glanage. 
-
-    Mon comprehension du mot « glanage » après j'ai regardé le film: une idée, ou style de vie, où on 
-    récupere choses qui les autres ne veulent pas-- où sont quelquefois regardent comme gaspillage.
-    
-
-
-</p>
+    <h2>Introduction</h2>
+    <p>
+        Ce blog explore comment je « glane » dans ma propre vie en récupérant, 
+        réutilisant et transformant des objets pour réduire le gaspillage. 
+        Je m’inspire du film <i>Les Glaneurs et la Glaneuse</i>, qui montre que 
+        glaner n’est pas seulement un acte physique, mais aussi une manière 
+        de regarder la société différemment.
+    </p>
 </div>
 
-<!-- Menu toggle script -->
+<!-- TEXT SECTION -->
+<div class="section">
+    <h2>Mon texte</h2>
+
+    <p><strong>Durabilité :</strong> « La durabilité est une notion à double sens, 
+      recouvrant celle de durée et celle de soutenabilité sur le plan économique, 
+      social et environnemental. » (défini dans le glossaire de Géoconfluences)</p>
+
+    <p><strong>Glanage :</strong> « Pratique qui consiste, après la récolte, à récupérer 
+      les aliments laissés dans les champs et les vergers appartenant à autrui. » 
+      (défini dans le Grand Dictionnaire Terminologique de Québec)</p>
+
+    <p>Contrairement à de nombreuses idées populaires sur la durabilité, dans le film 
+      <i>Les Glaneurs et la Glaneuse</i>, Varda ne condamne pas directement le consumérisme, 
+      mais plutôt le gaspillage incessant et le besoin constant de nouveauté, qui ont créé 
+      une nouvelle forme de glanage.</p>
+
+    <p>Après avoir regardé le film, je comprends le « glanage » comme une idée ou un style de vie : 
+      récupérer des objets que les autres ne veulent plus, parfois considérés comme du gaspillage.</p>
+</div>
+
+<!-- MENU TOGGLE SCRIPT -->
 <script>
 function toggleMenu() {
-  const list = document.getElementById('menu-list');
-  list.style.display = (list.style.display === 'block') ? 'none' : 'block';
+    const list = document.getElementById('menu-list');
+    list.style.display = (list.style.display === 'block') ? 'none' : 'block';
 }
 </script>
 
 </body>
+</html>
