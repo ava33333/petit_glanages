@@ -71,6 +71,18 @@
         .menu-list a:hover {
             background: #028080;
         }
+        
+        /* Giant Triangle Above Pillars */
+        <div class="pillar-triangle"></div>
+
+        .pillar-triangle {
+            width: 100%;          /* span the whole container */
+            height: 120px;        /* height of the triangle */
+            background: linear-gradient(to top, #52b69a, #34a0a4);
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%); /* triangle shape */
+            margin-bottom: -60px; /* pull it down slightly over pillars if needed */
+        }
+
 
         /* PILLARS STYLES */
         .pillars-container {
