@@ -106,12 +106,86 @@
 
 <!-- TEXT SECTION -->
 <div class="section">
-    <h2>Mon texte</h2>
+    <h2>Comment est-ce que la durabilité et le glanage lié?</h2>
 
     <p><strong>Durabilité :</strong> « La durabilité est une notion à double sens, 
       recouvrant celle de durée et celle de soutenabilité sur le plan économique, 
       social et environnemental. » (défini dans le glossaire de Géoconfluences)</p>
 
+<div class="pillars-container">
+  <div class="pillar">
+    <div class="pillar-info">
+      <h3>Environnement</h3>
+      <p>Conserver et protéger les ressources naturelles, réduire la pollution et favoriser la biodiversité.</p>
+    </div>
+    <div class="pillar-shape">🌿</div>
+  </div>
+
+  <div class="pillar">
+    <div class="pillar-info">
+      <h3>Économie</h3>
+      <p>Encourager des pratiques financières durables, soutenir les entreprises responsables et la consommation consciente.</p>
+    </div>
+    <div class="pillar-shape">💰</div>
+  </div>
+
+  <div class="pillar">
+    <div class="pillar-info">
+      <h3>Social</h3>
+      <p>Favoriser l'équité, le bien-être et l'inclusion des communautés dans toutes les décisions durables.</p>
+    </div>
+    <div class="pillar-shape">🤝</div>
+  </div>
+</div>
+
+<style>
+.pillars-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 2rem 0;
+}
+
+.pillar {
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+}
+
+.pillar-shape {
+  width: 80px;
+  height: 200px;
+  background: #52b69a;
+  border-radius: 10px 10px 0 0;
+  margin: 0 auto;
+  font-size: 50px; /* using emoji as placeholder for fun visuals */
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.pillar-info {
+  position: absolute;
+  bottom: 220px; /* appear above the pillar */
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  color: #333;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  width: 200px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 10;
+}
+
+.pillar:hover .pillar-info {
+  opacity: 1;
+  pointer-events: auto;
+}
+</style>
+    
     <p><strong>Glanage :</strong> « Pratique qui consiste, après la récolte, à récupérer 
       les aliments laissés dans les champs et les vergers appartenant à autrui. » 
       (défini dans le Grand Dictionnaire Terminologique de Québec)</p>
