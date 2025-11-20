@@ -74,26 +74,27 @@
         
         /* Giant Triangle Above Pillars */
         .pillar-triangle {
-            width: 100%;          /* span the whole container */
-            height: 120px;        /* height of the triangle */
+            width: 100%;
+            height: 120px;
             background: linear-gradient(to top, #52b69a, #34a0a4);
-            clip-path: polygon(50% 0%, 0% 100%, 100% 100%); /* triangle shape */
-            margin-bottom: -60px; /* pull it down slightly over pillars if needed */
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+            margin-bottom: 20px;  /* adds clean spacing */
         }
+
 
         /* bottom of pillars */
         .pillar-rounded-rectangle {
             width: 100%;
             height: 100px;
             background: linear-gradient(to top, #52b69a, #34a0a4);
-            border-radius: 15px;
+            margin-top: 20px;
         }
 
         /* PILLARS STYLES */
         .pillars-container {
+            margin-top: 20px;
             display: flex;
             justify-content: space-around;
-            margin: 2rem 0;
         }
         .pillar {
             position: relative;
