@@ -1,0 +1,79 @@
+/* BODY + PAGE BASICS */
+body {
+    font-family: 'Oswald', sans-serif;
+    background: #faf8f5;
+    color: #1e6091;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    line-height: 1.6;
+}
+
+h1, h2 {
+    color: #004e64;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.section {
+    background: #ffffff;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+}
+
+/* ===============================
+    MENU STYLES
+   =============================== */
+
+.menu {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+/* Hamburger button */
+.menu-toggle {
+    background: #036666;
+    color: white;
+    padding: 10px 15px;
+    width: fit-content;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* Menu dropdown */
+.menu-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+    display: none; /* hidden at first */
+    background: #036666;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* List items */
+.menu-list li {
+    border-bottom: 1px solid #034f4f;
+}
+
+.menu-list li:last-child {
+    border-bottom: none;
+}
+
+/* Links */
+.menu-list a {
+    display: block;
+    padding: 12px 16px;
+    text-decoration: none;
+    color: white;
+}
+
+.menu-list a:hover {
+    background: #028080;
+}
