@@ -77,3 +77,76 @@ header {
 .menu-list a:hover {
     background: #028080;
 }
+
+/* stuff for sustainability pillars*/
+/* Giant Triangle Above Pillars */
+        .pillar-triangle {
+            width: 100%;
+            height: 120px;
+            background: linear-gradient(to top, #52b69a, #34a0a4);
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+            margin-bottom: 10px;  /* adds clean spacing */
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        /* bottom of pillars */
+        .pillar-rounded-rectangle {
+            width: 95%;
+            height: 80px;
+            background: linear-gradient(to top, #52b69a, #34a0a4);
+            margin: 10px auto; /* should center rectangle*/
+            border-radius: 15px;
+            display: block;
+        }
+
+        /* PILLARS STYLES */
+        .pillars-container {
+            display: flex;
+            justify-content: space-around;
+        }
+        .pillar {
+            position: relative;
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .pillar:hover {
+            transform: scale(1.05); /* subtle zoom effect */
+        }
+
+        /* Column shapes */
+        .pillar-shape {
+            background: linear-gradient(to top, #52b69a, #34a0a4);
+            width: 60px;
+            height: 200px;
+            margin: 0 auto;
+            border-radius: 8px;
+            position: relative;
+            box-shadow: inset 0 0 0 4px rgba(0,0,0,0.05), 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        /* Info box */
+        .pillar-info {
+            position: absolute;
+            bottom: 220px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: white;
+            color: #05668d;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            width: 220px;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+            text-align: left;
+        }
+        .pillar:hover .pillar-info {
+            opacity: 1;
+            pointer-events: auto;
+        }
