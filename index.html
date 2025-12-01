@@ -44,22 +44,6 @@
         évocateur et d’une grande délicatesse.
     </p>
     
-<! -- Film strip -->
-<div class="film-container">
-    <img src="images/Camera.jpg" 
-         alt="Camera"
-         class="camera-icon"
-         onclick="toggleFilm()">
-
-    <div id="film-strip" class="film-strip">
-        <div class="frame"><img src="images/Camion.jpg" alt=""></div>
-        <div class="frame"><img src="images/CLoche.jpg" alt=""></div>
-        <div class="frame"><img src="images/Loi.jpg" alt=""></div>
-        <div class="frame"><img src="images/Marché.jpg" alt=""></div>
-        <div class="frame"><img src="images/Patates.jpg" alt=""></div>
-        -->
-    </div>
-</div>
 
 </div>
 
@@ -70,10 +54,6 @@ function toggleMenu() {
     list.style.display = (list.style.display === 'block') ? 'none' : 'block';
 }
 
-function toggleFilm() {
-    const strip = document.getElementById("film-strip");
-    strip.classList.toggle("open");
-}
 </script>
 
 </body>
