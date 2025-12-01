@@ -7,7 +7,8 @@ body {
     margin: 0 auto;
     padding: 2rem;
     line-height: 1.6;
-    padding-left: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 h1, h2 {
